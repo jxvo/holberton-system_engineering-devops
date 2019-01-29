@@ -1,0 +1,1 @@
+The purpose of this project is to understand shell commands, and creating bash scripts.
