@@ -1,0 +1,1 @@
+This project contains scripts that modify permissions of files, groups and users within the shell.
