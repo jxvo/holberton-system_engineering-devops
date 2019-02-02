@@ -1,0 +1,1 @@
+This projects covers a better understanding of input and output redirections, as well as the use of special characters.
