@@ -1,0 +1,2 @@
+#!/bin/bash
+touch js/dir-{01..20}\.js/file{01..20}.js
