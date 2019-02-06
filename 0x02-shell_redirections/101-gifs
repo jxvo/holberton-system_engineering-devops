@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name "*.js" -printf "%f\n" | sort -d | tr -d ".js"
+find . -name "*.gif" -printf "%f\n" | sort -d | tr -d ".js"
