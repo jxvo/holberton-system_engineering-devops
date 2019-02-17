@@ -1,0 +1,2 @@
+#!/bin/bash
+mkdir js/.dir{21..30}
