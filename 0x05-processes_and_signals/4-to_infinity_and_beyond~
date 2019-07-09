@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# displays literally the best quote ever always and forever
+declare -r lightyear=true
+while (( lightyear ))
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
