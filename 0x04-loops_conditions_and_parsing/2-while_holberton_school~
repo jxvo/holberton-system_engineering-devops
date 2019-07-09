@@ -1,0 +1,10 @@
+B#!/usr/bin/env bash
+# using a while loop, print a string 10 times
+
+declare -i idx=0
+
+while (( idx < 10 ))
+do
+	echo "Holberton School"
+	(( idx++ ))
+done
