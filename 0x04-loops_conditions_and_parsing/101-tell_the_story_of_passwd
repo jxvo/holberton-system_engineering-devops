@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# displays the contents of /etc/passwd but like if you were 4
+
+while IFS=: read -r USERNAME PASSWORD USERID GROUPID USERINFO HOMEDIR MYSHELL
+do
+	echo "The user $USERNAME is part of the $GROUPID gang, lives in $HOMEDIR and rides $MYSHELL. $USERID's place is protected by the passcode $PASSWORD, more info about the user here: $USERINFO"
+done < "/etc/passwd"
