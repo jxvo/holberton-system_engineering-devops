@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# creates a file with it's PID, runs an infinite loop, and handles signals
+
+declare HPID="/var/run/holbertonscript.pid"
+echo $$ > $HPID
+
+trap 'echo "Y U no love me?!"' SIGINT
+trap 'echo "I hate the kill command" && sudo rm $HPID && exit' SIGTERM
+trap 'sudo rm $HPID && exit' SIGQUIT
+
+while true
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
