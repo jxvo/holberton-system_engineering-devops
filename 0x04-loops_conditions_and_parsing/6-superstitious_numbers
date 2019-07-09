@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # prints numbers with different outputs at 4th, 9th, and 17th iterations
 
-declare -i idx=0
+declare -i idx=1
 while (( idx < 21 ))
 do
 	echo "$idx"
