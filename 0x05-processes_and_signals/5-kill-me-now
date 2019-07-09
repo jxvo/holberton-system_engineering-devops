@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# she's got a criminal mind; he's got a reason to pray, his life is under the gun, he's got to hold every day; now he just wants to wake up, yeah just to prove it's dream, cause she's an angel for sure, but that remains to be seen
+
+thekillers=$(pgrep -f "4-to_infinity_and_beyond")
+kill "$thekillers"
