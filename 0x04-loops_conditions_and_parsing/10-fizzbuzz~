@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# FizzBuzz: bash edition 3000
+
+declare -i lightyear=1
+
+while (( lightyear < 101 ))
+do
+	if (( lightyear % 15 == 0 ))
+	then
+		echo "FizzBuzz"
+	elif (( lightyear % 5 == 0 ))
+	then
+		echo "Buzz"
+	elif (( lightyear % 3 == 0 ))
+	then
+		echo "Fizz"
+	else
+		echo "$lightyear"
+	fi
+done
