@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# omae wa mou shindeiru
+pkill -f "7-highlander" -KILL
