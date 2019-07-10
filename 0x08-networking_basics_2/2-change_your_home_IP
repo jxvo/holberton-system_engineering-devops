@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# configure ubuntu server to resolve localhost to 127.0.0.2 and facebook.com to 8.8.8.8
+echo -e "127.0.0.2\tlocalhost\n8.8.8.8\tfacebook.com" > /tmp/hosts.new
+cp --force /tmp/hosts.new /etc/hosts
