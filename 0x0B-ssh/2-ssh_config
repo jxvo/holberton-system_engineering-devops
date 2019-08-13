@@ -1,5 +1,6 @@
-#!/usr/bin/env bash
-# connect to server without typing password
+# copy of holberton server's .ssh/config file
+# allows ssh connectiion without typing a password
+# warning: increases server risk of an attack
 Host *
     IdentityFile ~/.ssh/holberton
     ForwardAgent yes
