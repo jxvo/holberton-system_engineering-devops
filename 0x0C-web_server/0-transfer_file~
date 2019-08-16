@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# copy a file from client to server using scp
+# Arguments:
+#	[0] path to source file
+#	[1] IP of receiving server
+#	[2] username scp connects with
+#	[3] path to SSH private key
+
+if (( $# < 4 ));
+then
+	echo "Usage: 0-transfer_file PATH_TO_FILE_IP IP USERNAME PATH_TO_SSH_KEY"
+fi
