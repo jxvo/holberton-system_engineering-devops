@@ -1,16 +1,14 @@
 #!/usr/bin/python3
 """GETS User and Tasks Completed from jsonplaceholder API"""
-
-
+import csv
 import requests
 from sys import argv
 
-
 if __name__ == "__main__":
-res = requests.get('https://jsonplaceholder.typicode.com/todos')
-  res2 = requests.get('https://jsonplaceholder.typicode.com/users')
+    res = requests.get('https://jsonplaceholder.typicode.com/todos')
+    res2 = requests.get('https://jsonplaceholder.typicode.com/users')
 
-   for user_dict in res2.json():
+    for user_dict in res2.json():
         if user_dict.get('id') == int(argv[1]):
             username = user_dict.get('username')
 
