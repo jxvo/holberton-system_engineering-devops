@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# run Nginx as a non-root user in 7 lines or less
+pkill apache2
+chmod 644 /etc/nginx/nginx.conf
+sed -ri "s,\listen\s80\sdefault,listen 8080 default," /etc/nginx/sites-enabled/default
+sed -ri "s,\[::\]:80,[::]:8080," /etc/nginx/sites-enabled/default
+sudo -u nginx service nginx start
