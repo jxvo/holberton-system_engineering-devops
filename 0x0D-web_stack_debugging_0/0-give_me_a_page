@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# fixed it :)
+apt-get update
+service apache2 start
