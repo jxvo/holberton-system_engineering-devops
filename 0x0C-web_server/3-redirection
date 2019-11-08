@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Set up nginx redirect_me
+
+redirect="root /var/www/html;\n\n\tlocation /redirect_me {\n\t\treturn\t301 https://www.youtube.com/watch?v=CKAc3nYEatw;\n\t}\n\n"
+apt-get -y update
+apt-get -y install nginx
+echo "Holberton School" > /var/www/html/index.nginx-debian.html
+sed -i "s,root \/var\/www\/html;,$redirect," /etc/nginx/sites-enabled/default
+service nginx reload
+service nginx restart
